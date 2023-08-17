@@ -195,7 +195,7 @@ body {
   background-color: #ffd17c;
 }
 .t2 {
-  background-color: #c4fab7;
+  background-color: #9df587;
 }
 .head {
   display: flex;
@@ -321,7 +321,14 @@ body {
 }
 .close-name {
   margin-right: 15px;
+  background-color: rgb(249, 130, 130);
+  border-color: rgb(249, 130, 130);
 }
+.close-pin {
+  background-color: rgb(249, 130, 130);
+  border-color: rgb(249, 130, 130);
+}
+
 .date {
   display: flex;
   justify-content: flex-end;
