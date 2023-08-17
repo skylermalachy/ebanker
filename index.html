@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <title>Js practice</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h2 class="lg debit">e<span class="credit">BANKER</span></h2>
+      <div><p class="welcome"></p></div>
+      <form class="button">
+        <input
+          type="text"
+          placeholder="username"
+          class="login-details input username-input"
+        />
+        <input
+          type="pin"
+          placeholder="pin"
+          maxlength="4"
+          class="login-details input pin-input"
+        />
+        <button class="login-details btn-log">log in&rarr;</button>
+      </form>
+    </nav>
+
+    <main class="application bg">
+      <div class="head">
+        <p class="timer">logging out in:<span class="log-out"></span></p>
+        <p class="bal">Available balance: <span class="Balance"></span></p>
+      </div>
+      <div class="date"><h5 class="time-now"></h5></div>
+      <section class="Transaction-sect">
+        <div
+          class="row d-flex justify-content-center"
+          style="
+            background-color: rgb(15, 3, 68);
+            border-radius: 15px;
+            margin-top: 20px;
+          "
+        >
+          <h3 class="title">Transaction History</h3>
+          <div class="alert bg-white col-10 col-sm-6">
+            <div class=".col-8 bg-light col1 m-1">
+              <label class="debit-btn credit-btn"></label>
+              <div class="move-date">02-12-2023</div>
+              <div class="display credit debit"></div>
+            </div>
+          </div>
+
+          <div class="col-10 col-sm-10">
+            <div class="row d-flex justify-content-center">
+              <div class=".col-10 col-sm-3 col col2 bg-warning p-1 mt-2">
+                <p class="tfr">Transfer Money</p>
+                <form class="input-sect">
+                  <input type="text" class="trans t1" /><input
+                    type="text"
+                    class="trans amt"
+                  />
+                  <button class="log transfer-btn">&rarr;</button>
+                </form>
+                <h5 class="detail">
+                  account-number <span class="amtl">amount</span>
+                </h5>
+                <p class="apprec">Thanks for banking with us</p>
+              </div>
+              <div class=".col-10 col-sm-3 col2 col3 col p-1 mt-2">
+                <p class="tfr">Take soft Loan</p>
+                <form class="input-sect">
+                  <input type="text" class="trans t2" />
+                  <button class="log loan">&rarr;</button>
+                </form>
+                <h5 class="detail">
+                  <span class="amt1">amount</span>
+                </h5>
+                <p class="apprec">secure payment you can trust</p>
+              </div>
+
+              <div class=".col-10 col-sm-3 col2 bg-danger col p-1 mt-2">
+                <p class="tfr">Delete Account</p>
+                <form class="input-sect">
+                  <input type="text" class="trans close-name" /><input
+                    type="text"
+                    class="trans close-pin"
+                    maxlength="4"
+                  />
+                  <button class="log close-btn">&rarr;</button>
+                </form>
+                <h5 class="detail">
+                  confirm username <span class="amtw">confirm pin</span>
+                </h5>
+                <p class="apprec">You can always come back later</p>
+              </div>
+            </div>
+          </div>
+          <div class="summary m-3">
+            <p class="foot">Incoming: <span class="income credit"></span></p>
+            <p class="foot">Outgoing: <span class="outgoing debit"></span></p>
+            <p class="foot">Interest: <span class="interest credit"></span></p>
+          </div>
+          <section class="hide-btn lgt">
+            <button class="logout">log out</button>
+          </section>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
